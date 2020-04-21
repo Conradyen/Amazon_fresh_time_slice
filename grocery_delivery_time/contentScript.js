@@ -9,7 +9,7 @@ const AMAZON_URL = 'https://www.amazon.com/gp/buy/shipoptionselect/handlers/disp
 const COSTCO_URL = 'https://sameday.costco.com/store/checkout_v3';
 const INSTACART_URL = 'https://www.instacart.com/store/checkout_v3';
 const SUBMIT_SELECTOR = 'input[type=submit]';
-
+const DING_AUDIO = new Audio(chrome.runtime.getURL("ding.mp3"));
 const NOT_FOUND = {
     store: '',
     time: '',
@@ -86,6 +86,7 @@ const check = retry => {
     if (time && nodes) {
         chrome.runtime.sendMessage({ time, store });
         nodes.map((n, i) => setTimeout(() => n.click(), defer * (i + 1)));
+        DING_AUDIO.play();
         return;
     }
 
