@@ -9,7 +9,9 @@ Delivery Time on delivery serverce like Amazon fresh, whole food and Instacart m
 chrome://extensions
 ```
 3. Turn on developer mode.
+![developer mode](PNGs/dmode.png)
 4. Load extension by clik on Load unpacked.
+![Load unpacked](PNGs/load.png)
 5. Shop 
 - [Amazon Fresh](https://www.amazon.com/alm/storefront?almBrandId=QW1hem9uIEZyZXNo)
 - [Whole Foods](https://www.amazon.com/alm/storefront/?almBrandId=VUZHIFdob2xlIEZvb2Rz)
